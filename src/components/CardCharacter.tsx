@@ -1,3 +1,4 @@
+import "../css/cardCharacter.css";
 interface Props {
   name: string;
   image: string;
@@ -5,9 +6,10 @@ interface Props {
 
 export default function CardCharacter({ name, image }: Props) {
   return (
-    <div>
-      <h2>{name}</h2>
-      <img src={image} alt={name} />
+    <div className="card-character">
+      <img className="img-card-character" src={image} alt={name} />
+
+      <h2 className="title-card-character">{name}</h2>
     </div>
   );
 }
