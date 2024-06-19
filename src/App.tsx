@@ -5,6 +5,7 @@ import { usePagination } from "./logic/usePagination";
 import { linksFooter } from "./data/dataFooter";
 import "./App.css";
 import Footer from "./components/Footer";
+import selfie from "./assets/image/selfie.jpg";
 
 const dataNavBar = [
   { link: "#", text: "Inicio" },
@@ -40,7 +41,7 @@ function App() {
         </section>
       </main>
       <footer>
-        <Footer autor="César Gutiérrez" data={linksFooter} />
+        <Footer autor="César Gutiérrez" data={linksFooter} selfie={selfie} />
       </footer>
     </section>
   );
