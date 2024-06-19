@@ -2,16 +2,35 @@
   font-family: "Get Schwifty";
   src: url("./assets/fonts/get_schwifty.ttf");
 }
+
+@font-face {
+  font-family: "Lilita One";
+  src: url("./assets/fonts/LilitaOne-Regular.ttf");
+}
 :root {
-  ---primary-color: rgb(136, 226, 59);
+  --primary-color: rgb(136, 226, 59);
+  --neutral-green: hsl(75, 94%, 57%);
   --neutral-grey: hsl(0, 0%, 20%);
   --neutral-dark-grey: hsl(0, 0%, 12%);
   --neutral-off-black: hsl(0, 0%, 8%);
   --neutral-white: hsl(0, 0%, 100%);
+  --lilita-font: "Lilita One", sans-serif;
 }
+
+li {
+  font-family: var(--lilita-font);
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-white);
+}
+
 h2 {
   width: fit-content;
-  color: var(---primary-color);
+  color: var(--primary-color);
+  font-family: "Get Schwifty", sans-serif;
 }
 
 body {
@@ -19,7 +38,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Get Schwifty", sans-serif;
+  font-family: var(--lilita-font);
   text-transform: capitalize;
   background-color: var(--neutral-off-black);
 }

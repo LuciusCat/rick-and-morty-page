@@ -1,0 +1,3 @@
+export const linksFooter = [
+    {link:"https://www.reddit.com/r/rickandmorty/", text: "Rick and Morty, Reddit Oficial"}, {link:"https://www.adultswim.com/videos/rick-and-morty/", text: "Adult Swim"}, {link:"https://www.youtube.com/playlist?list=PLQl8zBB7bPvL6GycjAtAibVp6FsLWvMcY", text:"Rick and Morty, Youtube Oficial"}, {link:"https://x.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", text:"Rick and Morty, X Oficial"}
+]

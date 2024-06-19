@@ -7,8 +7,13 @@ interface Character {
   image: string;
 }
 
-export default function CharacterList() {
-  const api = { url: "https://rickandmortyapi.com/api/character" };
+interface Props {
+  url: string;
+  page: number;
+}
+
+export default function CharacterList({ url, page }: Props) {
+  const api = { url: `${url}/character?page=${page}` };
   const { data, loading, error } = useFetchApi<{ results: Character[] }>(api);
 
   if (loading) {

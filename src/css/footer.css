@@ -1,0 +1,44 @@
+.footer-container {
+  width: 96%;
+  height: 96%;
+}
+.autor-footer {
+  color: var(--neutral-white);
+  font-weight: normal;
+}
+
+.ul-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.li-footer {
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--neutral-grey);
+  width: min-content;
+  margin: 1%;
+  padding: 1%;
+  transition: all 0.5s ease;
+  flex-grow: 1;
+}
+
+.li-footer:hover,
+.li-footer:active {
+  background-color: var(--neutral-green);
+  scale: 1.01;
+  a {
+    color: var(--neutral-grey);
+  }
+}
+
+.description-autor {
+  color: var(--neutral-green);
+}
+
+.text-footer {
+  color: var(--neutral-white);
+}

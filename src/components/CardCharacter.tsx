@@ -6,10 +6,10 @@ interface Props {
 
 export default function CardCharacter({ name, image }: Props) {
   return (
-    <div className="card-character">
+    <article className="card-character">
       <img className="img-card-character" src={image} alt={name} />
 
       <h2 className="title-card-character">{name}</h2>
-    </div>
+    </article>
   );
 }
