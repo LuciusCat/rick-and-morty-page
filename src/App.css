@@ -34,10 +34,11 @@ main {
 footer {
   height: auto;
   width: 100%;
-  display: grid;
-  justify-items: center;
   border-radius: 20px;
   background-color: var(--neutral-dark-grey);
+  padding: 2%;
+  display: grid;
+  gap: 2%;
 }
 
 .character-list {
@@ -51,11 +52,11 @@ footer {
 }
 
 .button-container {
-  width: 95%;
+  width: 96%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2%;
+  margin: 2% 0;
   margin-inline: auto;
   background-color: var(--neutral-off-black);
   padding: 10px;

@@ -5,7 +5,6 @@ import { usePagination } from "./logic/usePagination";
 import { linksFooter } from "./data/dataFooter";
 import "./App.css";
 import Footer from "./components/Footer";
-import selfie from "./assets/image/selfie.jpg";
 
 const dataNavBar = [
   { link: "#", text: "Inicio" },
@@ -32,7 +31,7 @@ function App() {
         </section>
 
         <section className="character-list">
-          <CharacterList url={API_URL} page={page} />;
+          <CharacterList url={API_URL} page={page} />
         </section>
 
         <section className="button-container">
@@ -41,7 +40,7 @@ function App() {
         </section>
       </main>
       <footer>
-        <Footer autor="César Gutiérrez" data={linksFooter} selfie={selfie} />
+        <Footer autor="César Gutiérrez" data={linksFooter} />
       </footer>
     </section>
   );

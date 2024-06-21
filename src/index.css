@@ -17,6 +17,19 @@
   --lilita-font: "Lilita One", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--lilita-font);
+  text-transform: capitalize;
+  background-color: var(--neutral-off-black);
+}
+
 li {
   font-family: var(--lilita-font);
   list-style: none;
@@ -31,14 +44,4 @@ h2 {
   width: fit-content;
   color: var(--primary-color);
   font-family: "Get Schwifty", sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--lilita-font);
-  text-transform: capitalize;
-  background-color: var(--neutral-off-black);
 }
