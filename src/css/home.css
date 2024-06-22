@@ -1,0 +1,88 @@
+.body-main {
+  grid-area: body;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "n1 n4"
+    "n1 n4"
+    "n2 n4"
+    "n2 n4"
+    "n2 n5"
+    "n2 n5"
+    "n3 n5"
+    "n3 n6"
+    "n3 n6"
+    "n3 n6";
+  gap: 2%;
+  article {
+    border-radius: 20px;
+    background-color: var(--neutral-dark-grey);
+  }
+
+  article p {
+    padding: 4%;
+    text-align: center;
+    font-size: clamp(1em, 2vw, 2em);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+.article-text {
+  display: grid;
+  place-content: center;
+}
+
+#n1 {
+  grid-area: n1;
+  font-size: clamp(1em, 5vw, 5em);
+}
+
+#n2 {
+  grid-area: n2;
+}
+
+#n3 {
+  grid-area: n3;
+}
+
+#n4 {
+  grid-area: n4;
+}
+
+#n5 {
+  grid-area: n5;
+}
+
+#n6 {
+  grid-area: n6;
+}
+
+@media (max-width: 767px) {
+  .body-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "n1 n1"
+      "n2 n2"
+      "n2 n2"
+      "n4 n4"
+      "n4 n4"
+      "n3 n3"
+      "n3 n3"
+      "n6 n6"
+      "n5 n5";
+    gap: 1%;
+  }
+  #n1 {
+    font-size: clamp(2em, 5vw, 5em);
+  }
+}

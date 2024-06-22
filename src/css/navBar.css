@@ -1,9 +1,19 @@
 .ul-nav-bar {
-  height: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  font-size: x-large;
-  height: 100%;
+  font-size: 1.5rem;
+  li {
+    transition: all 0.4s ease;
+  }
+
+  li:hover,
+  li:active {
+    scale: 1.1;
+    a {
+      color: var(--neutral-green);
+    }
+  }
 }

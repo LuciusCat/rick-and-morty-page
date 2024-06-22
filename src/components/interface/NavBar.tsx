@@ -1,4 +1,4 @@
-import "../css/navBar.css";
+import "../../css/navBar.css";
 interface Data {
   link: string;
   text: string;

@@ -1,4 +1,4 @@
-import "../css/footer.css";
+import "../../css/footer.css";
 interface DataProps {
   link: string;
   text: string;

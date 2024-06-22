@@ -17,17 +17,23 @@
   --lilita-font: "Lilita One", sans-serif;
 }
 
+hmtl {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-width: 0;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: var(--lilita-font);
   text-transform: capitalize;
   background-color: var(--neutral-off-black);
+  font-weight: normal;
 }
 
 li {
@@ -40,8 +46,16 @@ a {
   color: var(--neutral-white);
 }
 
-h2 {
+h1,
+h2,
+h3 {
+  text-wrap: balance;
   width: fit-content;
   color: var(--primary-color);
   font-family: "Get Schwifty", sans-serif;
+}
+
+p {
+  text-wrap: pretty;
+  color: var(--neutral-white);
 }
