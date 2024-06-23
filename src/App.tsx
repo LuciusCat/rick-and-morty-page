@@ -32,7 +32,7 @@ function App() {
           <NavBar data={dataNavBar} />
         </nav>
         <section className="body-main">
-          <article id="n1" className="article-text"></article>
+          <article id="n1"></article>
           <article id="n2" className="article-text">
             <p>
               "Rick and Morty" es una serie de televisión animada creada por
@@ -55,9 +55,7 @@ function App() {
               provocador.
             </p>
           </article>
-          <article id="n4">
-            <img src={portal} />
-          </article>
+          <article id="n4"></article>
           <article id="n5" className="article-text">
             <p>
               La serie ha ganado una gran popularidad y cuenta con una base de
@@ -67,9 +65,7 @@ function App() {
               perturbador.
             </p>
           </article>
-          <article id="n6">
-            <img src={sunset} />
-          </article>
+          <article id="n6"></article>
         </section>
       </main>
 

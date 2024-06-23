@@ -1,6 +1,6 @@
 .page {
   width: 80%;
-  margin: 10% auto;
+  margin: 5% auto;
   display: grid;
   gap: 10px;
 }
@@ -46,21 +46,13 @@ footer {
 
 main {
   gap: 1%;
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1fr 1fr auto repeat(4, 1fr);
-  grid-template-areas:
-    "header"
-    "header"
-    "nav"
-    "body"
-    "body"
-    "body"
-    "body";
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   grid-area: header;
+  padding: 2%;
   border-radius: 20px;
   background-image: url(./assets/image/lentes.jpeg);
   background-size: cover;
@@ -69,27 +61,10 @@ header {
   place-content: center;
   font-size: clamp(3em, 7vw, 8em);
   font-weight: bold;
+  background-position: center center;
   h1,
   h2 {
-    color: black;
-  }
-}
-
-@media (max-width: 767px) {
-  header {
-    max-height: 300px;
-    padding: 2%;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: auto auto repeat(4, 1fr);
-    grid-template-areas:
-      "header"
-      "nav"
-      "body"
-      "body"
-      "body"
-      "body";
+    color: var(--neutral-white);
   }
 }
 

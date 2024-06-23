@@ -42,7 +42,9 @@
 
 #n1 {
   grid-area: n1;
-  font-size: clamp(1em, 5vw, 5em);
+  background-image: url(../assets/image/ciberpunk.jpeg);
+  background-size: contain;
+  background-position: center center;
 }
 
 #n2 {
@@ -55,6 +57,9 @@
 
 #n4 {
   grid-area: n4;
+  background-image: url(../assets/image/portal.jpeg);
+  background-size: cover;
+  background-position: center center;
 }
 
 #n5 {
@@ -63,6 +68,9 @@
 
 #n6 {
   grid-area: n6;
+  background-image: url(../assets/image/atardecer-espacial.jpeg);
+  background-size: cover;
+  background-position: center center;
 }
 
 @media (max-width: 767px) {
