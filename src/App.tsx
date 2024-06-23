@@ -6,9 +6,6 @@ import { linksFooter } from "./data/dataFooter";
 import "./App.css";
 import Footer from "./components/interface/Footer";
 import "./css/home.css";
-import portal from "./assets/image/portal.jpeg";
-
-import sunset from "./assets/image/atardecer-espacial.jpeg";
 
 const dataNavBar = [
   { link: "#", text: "Inicio" },
