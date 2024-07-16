@@ -1,5 +1,5 @@
-import CardCharacter from "./CardCharacter";
-import useFetchApi from "../logic/useFetchApi";
+import CardCharacter from "../UI/CardCharacter";
+import useFetchApi from "../../logic/useFetchApi";
 
 interface Character {
   id: number;

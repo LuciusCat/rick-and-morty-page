@@ -1,4 +1,4 @@
-import "../css/cardCharacter.css";
+import "../../css/cardCharacter.css";
 interface Props {
   name: string;
   image: string;

@@ -1,6 +1,7 @@
 .autor-footer {
   color: var(--neutral-white);
   font-weight: normal;
+  font-family: var(--lilita-font);
 }
 
 .ul-footer {
@@ -21,11 +22,17 @@
   width: min-content;
   transition: all 0.5s ease;
   flex-grow: 1;
+
+  a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .li-footer:hover,
 .li-footer:active {
-  background-color: var(--neutral-green);
+  background-color: var(--primary-color);
   scale: 1.01;
   a {
     color: var(--neutral-grey);
@@ -33,7 +40,7 @@
 }
 
 .description-autor {
-  color: var(--neutral-green);
+  color: var(--primary-color);
 }
 
 .text-footer {
